@@ -53,7 +53,11 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         }
 
         // 4.扣减库存 MyBatis‑Plus 链式更新
-        boolean success = iSeckillVoucherService.update().setSql("stock = stock - 1").eq("voucher_id", voucherId).update();
+        boolean success = iSeckillVoucherService.update().
+                setSql("stock = stock - 1").
+                eq("voucher_id", voucherId).
+                gt("stock", 0).
+                update();
 
         if (!success) {
             return Result.fail("库存不足！");
