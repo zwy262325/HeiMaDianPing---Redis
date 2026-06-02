@@ -40,7 +40,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
     @Resource
     private StringRedisTemplate stringRedisTemplate;
 
-    @Resource
+    @Resource(name = "getRedissonClient")
     private RedissonClient redissonClient;
 
     @Override
