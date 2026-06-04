@@ -47,7 +47,7 @@ public class Get1000UsersToken {
                     String token = UUID.randomUUID().toString(true);
                     // 7.2,将User对象转化为HashMap存储
                     UserDTO userDTO = BeanUtil.copyProperties(user, UserDTO.class);
-                    File file = new File("C:\\Users\\10592\\Desktop\\token.txt");
+                    File file = new File("C:\\Users\\10592\\Desktop\\token1.txt");
                     FileOutputStream output = null;
                     try {
                         output = new FileOutputStream(file, true);
