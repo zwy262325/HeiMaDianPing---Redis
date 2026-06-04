@@ -24,27 +24,27 @@ public class RedisConfig {
         return Redisson.create(config);
     }
 
-    @Bean
-    public RedissonClient getRedissonClient8080(){
-        // 配置
-        Config config = new Config();
-        config.useSingleServer().setAddress("redis://127.0.0.1:6380");
-        return Redisson.create(config);
-    }
-
-    @Bean
-    public RedissonClient getRedissonClient8081(){
-        // 配置
-        Config config = new Config();
-        config.useSingleServer().setAddress("redis://127.0.0.1:6381");
-        return Redisson.create(config);
-    }
-
-    @Bean
-    public RedissonClient getRedissonClient8082(){
-        // 配置
-        Config config = new Config();
-        config.useSingleServer().setAddress("redis://127.0.0.1:6382");
-        return Redisson.create(config);
-    }
+//    @Bean
+//    public RedissonClient getRedissonClient8080(){
+//        // 配置
+//        Config config = new Config();
+//        config.useSingleServer().setAddress("redis://127.0.0.1:6380");
+//        return Redisson.create(config);
+//    }
+//
+//    @Bean
+//    public RedissonClient getRedissonClient8081(){
+//        // 配置
+//        Config config = new Config();
+//        config.useSingleServer().setAddress("redis://127.0.0.1:6381");
+//        return Redisson.create(config);
+//    }
+//
+//    @Bean
+//    public RedissonClient getRedissonClient8082(){
+//        // 配置
+//        Config config = new Config();
+//        config.useSingleServer().setAddress("redis://127.0.0.1:6382");
+//        return Redisson.create(config);
+//    }
 }

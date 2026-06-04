@@ -42,7 +42,6 @@ public class SimpleRedisLock implements ILock{
     /**
      * RedisScript类，用于读取lua文件。使用静态代码块，类加载时就加载。
      */
-
     private static final DefaultRedisScript<Long> UNLOCK_SCRIPT;
 
     static {
